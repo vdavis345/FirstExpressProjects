@@ -2,12 +2,18 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) =>{
-    res.send("Hello World 😄 ");
+    res.send("HomePage");
 });
 
-app.get('/about',(req,res) => { 
-    res.send("this is the about page")
+app.get('/help',(req,res) => { 
+    res.send("Help page")
 });
+app.get('/contact', (req, res) =>{
+    res.send("Contact Me");
+});
+
+
 
 app.listen(3000);
+
 
