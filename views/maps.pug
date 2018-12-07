@@ -1,0 +1,43 @@
+doctype html
+head
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+
+  
+  title Simple Map
+  meta(name='viewport' content='initial-scale=1.0')
+  meta(charset='utf-8')
+body
+  include includes/header.pug
+  style.
+    /* Always set the map height explicitly to define the size of the div
+    * element that contains the map. */
+    #map {
+    height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+#map
+script.
+ 
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ5-TBTnaqBFS6Ds1q5CgIGI4zjvcsu1Y&callback=initMap' async='' defer='')
+
+    script(src="/scripts/keys.js")
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous')
+    script(src='/scripts/maps.js')
+
+
+//- doctype html
+//- html(lang='en')
+//-  head
+//-     link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+
+//-     title Website
+//-  body
+//-     include includes/header.pug
+   
+//-     div.container
+//-     p contact us page

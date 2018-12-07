@@ -1,0 +1,62 @@
+
+
+doctype html
+html(lang='en')
+ head
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+    
+    title Website
+    style.
+     body{
+     background:red;
+     }
+
+ body
+    .jumbotron.jumbotron-fluid
+     .container
+     h1.display-4 Youtube
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+     a.navbar-brand(href='#')
+     button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+       span.navbar-toggler-icon
+     #navbarNav.collapse.navbar-collapse
+       ul.navbar-nav
+         li.nav-item.active
+           a.nav-link(href='/home')
+             | Home 
+             span.sr-only (current) 
+         li.nav-item
+           a.nav-link(href='/maps') Maps
+         li.nav-item
+           a.nav-link(href='/url') URL shortener
+         li.nav-item
+           a.nav-link(href='/youtube') Youtube  
+   
+    div.container 
+    center
+     input(id="youtube" type='text' placeholder='Youtube Search')
+    center 
+     button#search-button Search
+
+    div#results
+   
+      iframe#video0(type='text/html', width='640', height='390', src='', frameborder='0',href='')
+      iframe#video1(type='text/html', width='640', height='390', src='', frameborder='0',href='')
+      iframe#video2(type='text/html', width='640', height='390', src='', frameborder='0',href='')
+      iframe#video3(type='text/html', width='640', height='390', src='', frameborder='0',href='')
+      iframe#video4(type='text/html', width='640', height='390', src='', frameborder='0',href='')
+      iframe#video5(type='text/html', width='640', height='390', src='', frameborder='0',href='')
+      iframe#video6(type='text/html', width='640', height='390', src='', frameborder='0',href='')
+      iframe#video7(type='text/html', width='640', height='390', src='', frameborder='0',href='')
+      iframe#video8(type='text/html', width='640', height='390', src='', frameborder='0',href='')
+      iframe#video9(type='text/html', width='640', height='390', src='', frameborder='0',href='')
+      //- iframe#video10(type='text/html', width='640', height='390', src='', frameborder='0',href='')
+
+   
+
+
+    script(src="/scripts/keys.js")
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous')
+    script(src='/scripts/youtube.js')
+
+    
